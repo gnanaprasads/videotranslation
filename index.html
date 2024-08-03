@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Video Translator and Subtitler</title>
+    <style>
+        @font-face {
+            font-family: gaurav;
+            src: url(./check.ttf);
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+        #newfont {
+            font-family: gaurav;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: url('https://images.unsplash.com/photo-1516742042547-6b9e4f72a9b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDExfHxjb2RpbmclMjBsaWdodHxlbnwwfHx8fDE2Njk4NTM5MjI&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden; /* Prevents scrollbars */
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.2); /* Increased transparency for better contrast */
+            padding: 60px;
+            border-radius: 20px; /* Increased border radius */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow for a more pronounced effect */
+            animation: fadeIn 1.5s ease-in-out;
+            max-width: 90%; /* Responsive width */
+            width: 600px; /* Fixed width for larger screens */
+        }
+
+        h1 {
+            font-size: 3em; /* Increased font size */
+            margin-bottom: 20px;
+            animation: slideInFromTop 1s ease-out;
+            color: #f0f0f0; /* Lighter color for better readability */
+        }
+
+        p {
+            font-size: 1.3em; /* Slightly larger font size */
+            line-height: 1.8em; /* Increased line height */
+            margin-bottom: 40px;
+            animation: fadeIn 2s ease-in-out;
+            color: #e0e0e0; /* Slightly lighter color for text */
+        }
+
+        .button {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 15px 30px; /* Adjusted padding */
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px; /* Increased font size */
+            margin-top: 20px;
+            border-radius: 8px; /* Increased border radius */
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform transition */
+            animation: fadeIn 2.5s ease-in-out;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px); /* Button hover effect */
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideInFromTop {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 id="newfont">WE ARE V4</h1>
+    <div class="container">
+        <h1>and Subtitler</h1>
+        <p>This application helps you translate the audio of a video from one language to another and adds subtitles. Supported languages include English, Italian, Japanese, Russian, Spanish, German, Portuguese, Hindi, Tamil, Telugu, Kannada, and Malayalam.</p>
+        <p>Click the button below to start using the application.</p>
+        <button class="button" onclick="redirect()">Start Translating</button>
+    </div>
+
+    <script>
+        function redirect() {
+            window.location.href = "/app";
+        }
+    </script>
+</body>
+</html>
